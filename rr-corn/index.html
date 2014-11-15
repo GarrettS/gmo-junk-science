@@ -73,6 +73,7 @@ p {
  li {display: block; }
  #l1 {padding-left: 0pt;counter-reset: c1 0; }
  #l1> li:before {counter-increment: c1; content: counter(c1, decimal)". "; color: black; font-family:"Times New Roman", serif;  font-size: 10pt; }
+
 #materials-list {
  	padding-left: 0pt;
  	counter-reset: c2 0;
@@ -81,7 +82,12 @@ p {
  	font-style: italic;
 }
 
- #materials-list> li:before {
+#materials-list p, #materials-list table {
+	font-style: normal;
+ 	font-weight: normal;
+}
+
+#materials-list> li:before {
  	counter-increment: c2;
  	content: counter(c1, decimal)"."counter(c2, decimal)". ";
  	font-family:"Times New Roman", serif;
@@ -93,6 +99,33 @@ p {
     text-indent: 8pt;
     font-weight: normal;
     font-style: normal;
+}
+
+#table-1 {
+	width: 600px;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #555;
+	padding: 7px 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#table-1 th {
+	text-align: left;
+	padding: 7px 0;
+}
+
+#table-1 > tbody > tr:first-child > td {
+	padding-top: 17px;
+}
+
+#table-1 > tbody > tr:last-child > td {
+	padding-bottom: 17px;
+}
+
+#table-1 > tbody, #table-1 > thead {
+	border-top: 1px solid #555;
+	padding-top: 7px;
 }
 
  #l3 {padding-left: 0pt;counter-reset: d1 0; }
@@ -167,7 +200,7 @@ modiﬁed crop is comparable to the existing non-trans-genic crop. Deﬁned di�
 <p>0278-6915/$ - see front matter <span class="s15"># </span>2004 Elsevier Ltd. All rights reserved. doi:10.1016/j.fct.2004.02.013</p>
 
 <p>Roundup Ready corn (<a href="#bookmark36">event nk 603</a>) was produced by the stable insertion of coding sequences that express glyphosate-tolerant, 5-enolpyruvylshikimate-3-phosphate synthase (EPSPS) proteins. EPSPS is a key enzyme in the shikimic acid pathway (<a href="#franz-et-al" class="a">Franz et al.</a>, 1997) 
-	for the biosynthesis of aromatic amino acids (phenylalanine, tyrosine, tryptophan). The shikimic acid pathway is only present in plants and microorganisms and is absent in mammals, ﬁsh, birds, reptiles, and insects, and  is thus a good target for novel herbicides (<a href="#alibhai-et-al" class="a">Alibhai and Stallings</a>, 2001<span style=" color: #000;">). Glyphosate (</span><span class="s16">N</span><span style=" color: #000;">-phosphonomethyl glycine), the active ingredient in Roundup</span><span class="s18">1</span><span class="s19">1</span>
+	for the biosynthesis of aromatic amino acids (phenylalanine, tyrosine, tryptophan). The shikimic acid pathway is only present in plants and microorganisms and is absent in mammals, ﬁsh, birds, reptiles, and insects, and  is thus a good target for novel herbicides (<a href="#alibhai-et-al" class="a">Alibhai and Stallings</a>, 2001). Glyphosate (<span class="s16">N</span>-phosphonomethyl glycine), the active ingredient in Roundup<span class="s18">1</span><span class="s19">1</span>
 	agricultural herbicides, inhibits the EPSPS enzyme, thereby starving plants of aromatic amino acids (<a href="#bookmark54" class="a">Steinrucken and Amrhein, 1980; Haslam</a>, 1993).
 </p>
 
@@ -197,7 +230,8 @@ strain CP4 encodes a 47.6 kDa CP4 EPSPS protein consisting of a single polypepti
 		Agronomic assessments for corn include examination of various parameters such as yield, plant height, silk date, dropped ears, stalk rating, root strength, plant vigor, susceptibility to pathogens/pests, etc. (<a href="#bookmark59">Astwood and Fuchs</a>, 2000). These parameters have been developed by corn breeders following many years of conventional breeding of corn, and are used in selecting varieties that have optimal agronomic parameters to ensure performance in the market place. Since the agronomic requirements are so rigorous, very few corn varieties developed through conventional breeding are commercialized. Comparisons of the agronomic characteristics of Roundup Ready corn with conventional corn show no diﬀerences in phenotype, yield or other measured agronomic parameters listed above 
 	(<a href="#bookmark59" class="a">USDA</a>, 2001).</p>
 
-<p>Compositional assessments included a comprehensive comparison of 51 nutritional biochemical components of Roundup Ready corn to conventional corn grown during 1998 and 2000 in the United States, and during 1999 for corn grown in Europe. The ﬁeld trials and compositional analyses were carried out in compliance with EPA Good Laboratory Practice (GLP) standards. Grain was collected from replicated ﬁeld trials and was measured for proximates (protein, fat, ash, etc.), ﬁber, amino acids, fatty acids, vitamin E, nine minerals, phytic acid, trypsin inhibitor, and selected secondary metabolites. Forage was also collected and measured for proximates and ﬁber. All comparisons showed that Roundup Ready corn is compositionally comparable to conventional corn hybrids (<a href="#bookmark46">Ridley et al.</a>, 2002). These studies demonstrated that the insertion and expression of <span class="s16">cp4 epsps </span>coding sequences do not alter the proportion of aromatic amino acids associated with the shikimic acid pathway (the site of EPSPS activity).</p>
+<p>Compositional assessments included a comprehensive comparison of 51 nutritional biochemical components of Roundup Ready corn to conventional corn grown during 1998 and 2000 in the United States, and during 1999 for corn grown in Europe. The ﬁeld trials and compositional analyses were carried out in compliance with EPA Good Laboratory Practice (GLP) standards. Grain was collected from replicated ﬁeld trials and was measured for proximates (protein, fat, ash, etc.), ﬁber, amino acids, fatty acids, vitamin E, nine minerals, phytic acid, trypsin inhibitor, and selected secondary metabolites. Forage was also collected and measured for proximates and ﬁber. All comparisons showed that Roundup Ready corn is compositionally comparable to conventional corn hybrids (<a href="#bookmark46">Ridley et al.</a>, 2002). These studies demonstrated that the insertion and expression of <span class="s16">cp4 epsps</span> coding sequences do not alter the proportion of aromatic amino acids associated with the shikimic acid pathway (the site of EPSPS activity).
+</p>
 
 <p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">Although there is a comprehensive set of studies that conﬁrm the absence of ‘‘pleiotropic eﬀects’’ and the compositional comparability of  Roundup  Ready  corn to existing, non-transgenic hybrids, animal feeding studies have also been undertaken to provide further assurance of nutritional wholesomeness and safety. These studies include feeding trials in swine and poultry to demonstrate that Roundup Ready corn supports the growth of farm animals comparable to that of nontransgenic counterparts. A 90 day ‘‘safety assurance’’ study  was  also  carried  out  in  rats  to  provide  added 
 
@@ -216,7 +250,8 @@ strain CP4 encodes a 47.6 kDa CP4 EPSPS protein consisting of a single polypepti
 
 <p>Male and female Sprague–Dawley derived rats (Crl:CD<span class="s18">1</span>(SD)IGS BR) from Charles River Laboratories (Raleigh, NC) were approximately 6 weeks of age at study start. Rats were housed individually and provided food and water ad libitum. The testing facility provided  appropriate   environmental   conditions (22 <span class="s14">± </span>3 <span class="s21">o</span>C room temperature, 12-h light/dark cycle, 40– 60% humidity, 10–15 air changes/h), and cage rack location within the animal room was rotated weekly.</p>
 
-</li><li id="bookmark4">Test and control substances
+</li>
+<li id="bookmark4">Test and control substances
 
 <p id="bookmark28">Corn grain from Roundup Ready corn and its control [background genetics representative of the test line but lacking the nk 603 transgene (transformation event)] were grown at ﬁeld test sites in Ohio during the 1999 growing season. Roundup herbicide was applied to Roundup Ready corn plants during the growing season at commercial rates of application. Commercial, nontransgenic reference control corn grain representing a diversity of germplasm served as reference controls and were grown in various geographical locations in the United States (Ohio, Indiana, Iowa and Colorado) dur
 ing the 1999 growing season. The purpose of these reference controls was to approximate the normal range of responses of rats fed different commercial, non- transgenic corn grain since these data were not available. Prior to the advent of biotechnology, newly developed corn hybrids were not fed to rats in 90 day toxicology studies. The only historical data available was that for control rats at the testing laboratory that were fed grain from non-transgenic corn varieties incorporated into commercial rodent diets. The grain samples used for diet preparation were analyzed for nutrient compo- nents, pesticide residues (Covance Laboratories, Madison, WI, USA) including glyphosate (Monsanto Company, St. Louis, MO) and mycotoxins (Romer Labs, Union, MO). The identity of Roundup Ready corn grain was conﬁrmed by nk 603 event-speciﬁc polymerase chain reaction (PCR) analysis, the control line served as the negative control in the assay. The identity of reference control grain was conﬁrmed by chain of custody records.
@@ -231,16 +266,107 @@ ing the 1999 growing season. The purpose of these reference controls was to appr
 <li>Experimental design and treatment
 
 
-<p>Following acclimation to laboratory conditions, animals were assigned to one of ten experimental groups (20/sex/group) by stratiﬁed randomization so that mean body weights did not diﬀer signiﬁcantly (<span class="s16">P </span><span class="s14">&lt; </span><a href="#bookmark28" style=" color: black;font-size: 10pt;">0.05) among treatment groups. </a><a href="#bookmark28" class="a">Table </a><span style=" color: #000063;">1 </span>contains an outline of the experimental groups and treatment regimen.
+<p>Following acclimation to laboratory conditions, animals were assigned to one of ten experimental groups (20/sex/group) by stratiﬁed randomization so that mean body weights did not diﬀer signiﬁcantly (<span class="s16">P </span><span class="s14">&lt; </span>0.05) among treatment groups. Table 1 contains an outline of the experimental groups and treatment regimen.
 </p>
 
-<p class="s1" style="padding-top: 7pt;padding-left: 6pt;text-indent: 0pt;text-align: justify;">Table 1</p>
-<p><span><img width="319" height="0" alt="image" src="glyphosate/Image_007.png"/></span></p>
-<p style="padding-left: 6pt;text-indent: 0pt;text-align: justify;"><a href="#bookmark29" class="s2">Experimental groups and treatment regimen</a><a href="#bookmark29" class="s22">a</a></p>
-<p style="padding-left: 5pt;text-indent: 0pt;text-align: left;">ing  the  1999  growing  season.  The  purpose  of  these reference controls was to approximate the normal range</p>
-<p class="s1" style="padding-left: 5pt;text-indent: 0pt;line-height: 8pt;text-align: left;">Group                                   Animals/</p>
-<p><span><img width="319" height="0" alt="image" src="glyphosate/Image_008.png"/></span></p>
-<p class="s1" style="text-indent: 0pt;text-align: right;">sex</p>
+<h4>Table 1</h4>
+<table id="table-1">
+<caption>
+	Experimental groups and treatment regimen
+	<sup><a href="table-1-footnote">a</a></sup>
+</caption>
+    <thead>
+	<tr>
+		<th>Group
+		<th>Animals/Sex  
+	    <th>Location corn grown
+	    <th>Dietary level (% w/w)
+    </tr>
+	</thead>
+	<tbody>
+<tr>
+	<td>1 Control (low)
+	<td>20
+	<td>Ohio
+	<td>11
+</tr>
+
+<tr>
+	<td>2 Control (high)
+	<td>20
+	<td>Ohio
+	<td>33
+</tr>
+<tr>
+	<td>3 Roundup Ready (low)
+	<td>20
+	<td>Ohio
+	<td>11
+</tr>
+<tr>
+	<td>4 Roundup Ready (high) 
+	<td>20
+	<td>Ohio
+	<td>33
+</tr>
+<tr>
+	<td>5 Reference Control A
+	<td>20
+	<td>Ohio
+	<td>33
+</tr>
+
+<tr>
+<td>6 Reference Control B
+	<td>20
+	<td>Ohio
+	<td>33
+</tr>
+<tr>
+	<td>7 Reference Control C
+	<td>20
+	<td>Ohio
+	<td>33
+</tr>
+<tr>
+	<td>8 Reference Control D
+	<td>20
+	<td>Ohio
+	<td>33
+</tr>
+<tr>
+	<td>9 Reference Control E
+	<td>20
+	<td>Ohio
+	<td>33
+</tr>
+<tr>
+	<td>10 Reference Control F
+	<td>20
+	<td>Ohio
+	<td>33
+</tr>
+</tbody>
+</table>
+
+<p id="table-1-footnote">
+	<sup>a</sup>
+	Control and reference controls are non-transgenic varieties.
+</p>
+
+<p>
+	<a href="#bookmark29" class="s2">Experimental groups and treatment regimen</a><a href="#bookmark29" class="s22">a</a>
+</p>
+
+
+<p class="s1">Group Animals/</p>
+
+<p>
+	<img width="319" height="0" alt="image" src="glyphosate/Image_008.png"/>
+</p>
+
+<p class="s1">sex</p>
+
 <p class="s1" style="padding-left: 5pt;text-indent: 0pt;line-height: 8pt;text-align: left;">Location</p>
 <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">corn grown</p>
 <p class="s1" style="padding-left: 5pt;text-indent: 0pt;line-height: 8pt;text-align: left;">Dietary level</p>
