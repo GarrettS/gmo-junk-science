@@ -1,4 +1,4 @@
-<!DOCTYPE  html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -10,6 +10,22 @@ body {
 	width: 680px;
 	color: black;
 	font-family:"Adobe Caslon Pro", serif; font-style: normal;
+}
+
+h1 {
+	font-size: 24px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+p {
+	text-indent: 0;
+	font-size: 16px;
+	text-align: justify-word;
+	margin-left: 5px;
 }
 
 .s1 {
@@ -57,18 +73,33 @@ body {
  li {display: block; }
  #l1 {padding-left: 0pt;counter-reset: c1 0; }
  #l1> li:before {counter-increment: c1; content: counter(c1, decimal)". "; color: black; font-family:"Times New Roman", serif;  font-size: 10pt; }
- #l2 {padding-left: 0pt;counter-reset: c2 0; }
- #l2> li:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 10pt; }
+#materials-list {
+ 	padding-left: 0pt;
+ 	counter-reset: c2 0;
+ 	font-size: 15px;
+ 	font-weight: bold;
+ 	font-style: italic;
+}
+
+ #materials-list> li:before {
+ 	counter-increment: c2;
+ 	content: counter(c1, decimal)"."counter(c2, decimal)". ";
+ 	font-family:"Times New Roman", serif;
+ 	font-style: italic;
+}
+
+#materials-list p {
+    padding-left: 5pt;
+    text-indent: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+
  #l3 {padding-left: 0pt;counter-reset: d1 0; }
  #l3> li:before {counter-increment: d1; content: counter(d1, decimal)" ";   font-size: 8pt; }
  #l4 {padding-left: 0pt;counter-reset: c2 0; }
  #l4> li:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 10pt; }
  table, tbody {vertical-align: top; overflow: visible; }
-
-p {
-	text-indent: 0;
-	font-size: 9pt;
-}
 </style></head>
 <body>
 	<p>
@@ -85,7 +116,7 @@ p {
 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;"><a href="http://www.elsevier.com/locate/foodchemtox/a4.3d" class="s2" target="_blank">www.elsevier.com/locate/foodchemtox</a></p>
 
 
-<p class="s3" style="padding-top: 11pt;padding-left: 168pt;text-indent: -159pt;line-height: 20pt;text-align: left;"><a name="bookmark0">Results of a 13 week safety assurance study with rats fed grain from glyphosate tolerant corn</a></p>
+<h1 id="bookmark0">Results of a 13 week safety assurance study with rats fed grain from glyphosate tolerant corn</h1>
 
 <p class="s6" style="padding-top: 10pt;padding-left: 108pt;text-indent: 0pt;text-align: left;"><a href="#bookmark25" style=" color: black; font-size: 13pt;">B. Hammond</a><sup>a</sup>*,
 	<a href="#bookmark26" style=" color: black; font-size: 13pt;"
@@ -100,26 +131,25 @@ p {
 <p class="s7" style="text-indent: 0pt;text-align: center;">b<span class="s8">Monsanto Company, Metabolism and Safety Evaluation-Newstead (MSE-N), 645 S. Newstead Ave., St Louis, MO 63110, USA</span></p>
 
 
-<p class="s1" style="padding-left: 5pt;text-indent: 163pt;text-align: left;">Received 18 June 2003; accepted 12 February 2004</p>
-<p><br/></p>
-
-<p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;"><span><img width="670" height="1" alt="image" src="glyphosate/Image_003.png"/></span></p>
+<p class="s1" style="text-align: center;border-bottom: 1px solid #555; padding-bottom: 12px;margin-bottom: 22px">Received 18 June 2003; accepted 12 February 2004</p>
 
 
-<p class="s9" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">Abstract</p>
-<p class="s10" style="padding-top: 6pt;padding-left: 5pt;text-indent: 8pt;text-align: justify;">The current study presents the results of a 13 week feeding study in rats with grain from Roundup Ready<span class="s11">1</span><span class="s12"> </span>corn which is tolerant to the herbicide glyphosate. Herbicide tolerance was accomplished through the introduction of <span class="s13">cp4 epsps</span> coding sequences into the corn genome for <span class="s13">in planta</span> production of CP4 EPSPS enzymes. Unlike related corn EPSPS enzymes, CP4 EPSPS enzymes are not inhibited by the herbicide glyphosate. Purina TestDiets formulated Roundup Ready corn grain into rodent diets at levels of 11 and 33% (w/w). The responses of rats fed diets containing Roundup Ready corn grain were compared to that of rats fed diets containing non-transgenic grain (controls). All diets were nutritionally balanced and conformed to Purina Mills, Inc. speciﬁcations for Certiﬁed LabDiet 5002. There were 400 rats in the study divided into 10 groups of 20 rats/sex/group. Overall health, body weight, food consumption, clinical pathology parameters (hematology, blood chemistry, urinalysis), organ weights, gross and microscopic appearance of tissues were comparable between groups fed diets containing Roundup Ready and control corn grain. This study complements extensive agronomic, compositional and farm animal feeding studies with Roundup Ready corn grain, conﬁrming it is as safe and nutritious as existing commercial corn hybrids.</p>
+
+
+<h2>Abstract</h2>
+<p>The current study presents the results of a 13 week feeding study in rats with grain from Roundup Ready<span class="s11">1</span><span class="s12"> </span>corn which is tolerant to the herbicide glyphosate. Herbicide tolerance was accomplished through the introduction of <span class="s13">cp4 epsps</span> coding sequences into the corn genome for <span class="s13">in planta</span> production of CP4 EPSPS enzymes. Unlike related corn EPSPS enzymes, CP4 EPSPS enzymes are not inhibited by the herbicide glyphosate. Purina TestDiets formulated Roundup Ready corn grain into rodent diets at levels of 11 and 33% (w/w). The responses of rats fed diets containing Roundup Ready corn grain were compared to that of rats fed diets containing non-transgenic grain (controls). All diets were nutritionally balanced and conformed to Purina Mills, Inc. speciﬁcations for Certiﬁed LabDiet 5002. There were 400 rats in the study divided into 10 groups of 20 rats/sex/group. Overall health, body weight, food consumption, clinical pathology parameters (hematology, blood chemistry, urinalysis), organ weights, gross and microscopic appearance of tissues were comparable between groups fed diets containing Roundup Ready and control corn grain. This study complements extensive agronomic, compositional and farm animal feeding studies with Roundup Ready corn grain, conﬁrming it is as safe and nutritious as existing commercial corn hybrids.</p>
 
 <p class="s9" style="padding-left: 5pt;text-indent: 0pt;text-align: left;"># <span class="s10">2004 Elsevier Ltd. All rights reserved.</span></p>
 <p class="s8" style="padding-top: 6pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Keywords: <span class="s1">Corn; Genetically modiﬁed; Herbicide tolerant; Roundup herbicide; Rat feeding study</span></p>
 
 
-<p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;"><span><img width="677" height="1" alt="image" src="glyphosate/Image_004.png"/></span></p>
+<img width="677" height="1" alt="image" src="glyphosate/Image_004.png"/>
 
-<ol id="l1"><li style="padding-top: 3pt;padding-left: 18pt;text-indent: -12pt;text-align: justify;"><p class="s14" style="display: inline;"><a name="bookmark1">Introduction</a></p>
+<h2 id="bookmark1">Introduction</h2>
 
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">National and international regulatory authorities require that food produced through biotechnology meet the same safety standards as food grown conventionally; there must be ‘‘reasonable certainty that no 
-harm will result from intended uses under the anticipated conditions of consumption’’ (</a><a href="#bookmark53" class="a">OECD</a>, <span style=" color: #000063;">1993</span>). The food safety standard for biotech food therefore is that these foods must be <em>as safe as</em> food produced by conventional varieties.</p>
+<p>National and international regulatory authorities require that food produced through biotechnology meet the same safety standards as food grown conventionally; there must be ‘‘reasonable certainty that no 
+harm will result from intended uses under the anticipated conditions of consumption’’ (<a href="#bookmark53" class="a">OECD</a>, 1993). The food safety standard for biotech food therefore is that these foods must be <em>as safe as</em> food produced by conventional varieties.</p>
 
 <div style="border-width: 1px 0; border-style: solid;padding:0 12px 12px">
 <h4 class="s8">Abbreviations: </h4>
@@ -130,27 +160,27 @@ harm will result from intended uses under the anticipated conditions of consumpt
 </div>
 
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">The World Health Organization (<a href="#bookmark60" class="a">WHO</a>, 1995) and the United Nations Food and Agricultural Organization (<a href="#bookmark61" class="a">WHO, 1991; FAO, 1996</a>) and Organization for Economic Cooperation and Development (<a href="#bookmark53" class="a">OECD</a>, 1993 and 1997) have established a safety assessment process to assure that new foods are <em>as safe as</em> food produced from conventionally bred crops. This assessment process considers two main categories of potential risk; those related to the properties and function of the introduced trait, and those resulting from insertion of the introduced gene(s) into the plant genome that might theoretically cause unintended (pleiotropic) eﬀects. The risk assessment is a comparative safety assessment using conventional food with a history of safe consumption as a reference point for all comparisons. The outcome of this  assessment  is  to  assess  whether  the  genetically
+<p>The World Health Organization (<a href="#bookmark60" class="a">WHO</a>, 1995) and the United Nations Food and Agricultural Organization (<a href="#bookmark61" class="a">WHO, 1991; FAO, 1996</a>) and Organization for Economic Cooperation and Development (<a href="#bookmark53" class="a">OECD</a>, 1993 and 1997) have established a safety assessment process to assure that new foods are <em>as safe as</em> food produced from conventionally bred crops. This assessment process considers two main categories of potential risk; those related to the properties and function of the introduced trait, and those resulting from insertion of the introduced gene(s) into the plant genome that might theoretically cause unintended (pleiotropic) eﬀects. The risk assessment is a comparative safety assessment using conventional food with a history of safe consumption as a reference point for all comparisons. The outcome of this  assessment  is  to  assess  whether  the  genetically
 modiﬁed crop is comparable to the existing non-trans-genic crop. Deﬁned diﬀerences such as the introduced trait(s) are independently assessed for safety.
 </p>
 
-<p class="s1" style="padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">0278-6915/$ - see front matter <span class="s15"># </span>2004 Elsevier Ltd. All rights reserved. doi:10.1016/j.fct.2004.02.013</p>
+<p>0278-6915/$ - see front matter <span class="s15"># </span>2004 Elsevier Ltd. All rights reserved. doi:10.1016/j.fct.2004.02.013</p>
 
-<p class="s17" style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">Roundup Ready corn (<a href="#bookmark36">event nk 603</a>) was produced by the stable insertion of coding sequences that express glyphosate-tolerant, 5-enolpyruvylshikimate-3-phosphate synthase (EPSPS) proteins. EPSPS is a key enzyme in the shikimic acid pathway (</a><a href="#franz-et-al" class="a">Franz et al.</a>, 1997) 
+<p>Roundup Ready corn (<a href="#bookmark36">event nk 603</a>) was produced by the stable insertion of coding sequences that express glyphosate-tolerant, 5-enolpyruvylshikimate-3-phosphate synthase (EPSPS) proteins. EPSPS is a key enzyme in the shikimic acid pathway (<a href="#franz-et-al" class="a">Franz et al.</a>, 1997) 
 	for the biosynthesis of aromatic amino acids (phenylalanine, tyrosine, tryptophan). The shikimic acid pathway is only present in plants and microorganisms and is absent in mammals, ﬁsh, birds, reptiles, and insects, and  is thus a good target for novel herbicides (<a href="#alibhai-et-al" class="a">Alibhai and Stallings</a>, 2001<span style=" color: #000;">). Glyphosate (</span><span class="s16">N</span><span style=" color: #000;">-phosphonomethyl glycine), the active ingredient in Roundup</span><span class="s18">1</span><span class="s19">1</span>
 	agricultural herbicides, inhibits the EPSPS enzyme, thereby starving plants of aromatic amino acids (<a href="#bookmark54" class="a">Steinrucken and Amrhein, 1980; Haslam</a>, 1993).
 </p>
 
 
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">The glyphosate tolerant EPSPS enzyme (designated as CP4 EPSPS) introduced into corn plants is functionally similar to plant EPSPS enzymes but has a much reduced aﬃnity for glyphosate (<a href="#bookmark58" class="a">Padgette et al.</a>, <span style=" color: #000063;">1996</span>). The <span class="s16">cp4 epsps </span>coding sequence derived from <span class="s16">Agrobacterium sp. </span>
+<p>The glyphosate tolerant EPSPS enzyme (designated as CP4 EPSPS) introduced into corn plants is functionally similar to plant EPSPS enzymes but has a much reduced aﬃnity for glyphosate (<a href="#bookmark58" class="a">Padgette et al.</a>, 1996). The cp4 epsps coding sequence derived from <dfn>Agrobacterium sp.</dfn> 
 strain CP4 encodes a 47.6 kDa CP4 EPSPS protein consisting of a single polypeptide of 455 amino acids. In Roundup Ready corn, there are two forms of CP4 EPSPS proteins that diﬀer by one amino acid, proline versus leucine at amino acid position 214 in the encoded protein. Both  enzymes  show equivalent enzymatic activity in vitro for converting their normal substrates, shikimate-3-phosphate and phosphoenolpyruvate to 5-enolpyruvylshikimate-3-phosphate (EPSP), the precursor for aromatic amino acid synthesis (<a href="#heck-et-al">Heck et al.</a>, in press).
 </p>
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">The CP4 EPSPS protein with leucine at position 214 has been introduced into other crops such as soybeans, canola, sugar beets and cotton to provide herbicide tolerance. Plants that demonstrate a commercial level of tolerance to Roundup herbicide are called Roundup Ready<span class="s18">1</span><span class="s19">2</span>.</p>
-<p class="s17" style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">The nutritional requirements for aromatic amino acids to support the normal growth and development of Roundup Ready plants are met by the continued action of the glyphosate-tolerant CP4 EPSPS enzyme in the presence of glyphosate (<a href="#bookmark58">Padgette et al.</a>, 1996). A comprehensive safety assessment of the CP4 EPSPS protein has been previously reported (<a href="#harrison-et-al" class="a">Harrison et al.</a>, 1996).</p>
+<p>The CP4 EPSPS protein with leucine at position 214 has been introduced into other crops such as soybeans, canola, sugar beets and cotton to provide herbicide tolerance. Plants that demonstrate a commercial level of tolerance to Roundup herbicide are called Roundup Ready<span class="s18">1</span><span class="s19">2</span>.</p>
+<p>The nutritional requirements for aromatic amino acids to support the normal growth and development of Roundup Ready plants are met by the continued action of the glyphosate-tolerant CP4 EPSPS enzyme in the presence of glyphosate (<a href="#bookmark58">Padgette et al.</a>, 1996). A comprehensive safety assessment of the CP4 EPSPS protein has been previously reported (<a href="#harrison-et-al" class="a">Harrison et al.</a>, 1996).</p>
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">The second aspect of the safety assessment includes testing for potential pleiotropic eﬀects resulting from insertion of cp4 epsps coding sequences into the corn genome or as a consequence of enzyme activity associated with the introduced CP4 EPSPS enzymes. Testing involves a comparative safety assessment of the transgenic variety (i.e., Roundup Ready corn) with nontransgenic corn varieties that serve as a reference for all comparisons (<a href="#bookmark38">Dybing et al.</a>, 2002). The comparative safety assessment includes three main components: (1) an agronomic assessment in ﬁeld trials; (2) compositional assessment of corn grain and forage; (3) nutritional/safety assessment of corn grain and forage in animal feeding studies.
+<p>The second aspect of the safety assessment includes testing for potential pleiotropic eﬀects resulting from insertion of cp4 epsps coding sequences into the corn genome or as a consequence of enzyme activity associated with the introduced CP4 EPSPS enzymes. Testing involves a comparative safety assessment of the transgenic variety (i.e., Roundup Ready corn) with nontransgenic corn varieties that serve as a reference for all comparisons (<a href="#bookmark38">Dybing et al.</a>, 2002). The comparative safety assessment includes three main components: (1) an agronomic assessment in ﬁeld trials; (2) compositional assessment of corn grain and forage; (3) nutritional/safety assessment of corn grain and forage in animal feeding studies.
 </p>
 
 
@@ -167,34 +197,42 @@ strain CP4 encodes a 47.6 kDa CP4 EPSPS protein consisting of a single polypepti
 		Agronomic assessments for corn include examination of various parameters such as yield, plant height, silk date, dropped ears, stalk rating, root strength, plant vigor, susceptibility to pathogens/pests, etc. (<a href="#bookmark59">Astwood and Fuchs</a>, 2000). These parameters have been developed by corn breeders following many years of conventional breeding of corn, and are used in selecting varieties that have optimal agronomic parameters to ensure performance in the market place. Since the agronomic requirements are so rigorous, very few corn varieties developed through conventional breeding are commercialized. Comparisons of the agronomic characteristics of Roundup Ready corn with conventional corn show no diﬀerences in phenotype, yield or other measured agronomic parameters listed above 
 	(<a href="#bookmark59" class="a">USDA</a>, 2001).</p>
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;"><a href="#bookmark46" style=" color: black;font-size: 10pt;">Compositional assessments included a comprehensive comparison of 51 nutritional biochemical components of Roundup Ready corn to conventional corn grown during 1998 and 2000 in the United States, and during 1999 for corn grown in Europe. The ﬁeld trials and compositional analyses were carried out in compliance with EPA Good Laboratory Practice (GLP) standards. Grain was collected from replicated ﬁeld trials and was measured for proximates (protein, fat, ash, etc.), ﬁber, amino acids, fatty acids, vitamin E, nine minerals, phytic acid, trypsin inhibitor, and selected secondary metabolites. Forage was also collected and measured for proximates and ﬁber. All comparisons showed that Roundup Ready corn is compositionally comparable to conventional corn hybrids (</a><a href="#bookmark46" class="a">Ridley et al., </a><span style=" color: #000063;">2002</span>). These studies demonstrated that the insertion and expression of <span class="s16">cp4 epsps </span>coding sequences do not alter the proportion of aromatic amino acids associated with the shikimic acid pathway (the site of EPSPS activity).</p>
+<p>Compositional assessments included a comprehensive comparison of 51 nutritional biochemical components of Roundup Ready corn to conventional corn grown during 1998 and 2000 in the United States, and during 1999 for corn grown in Europe. The ﬁeld trials and compositional analyses were carried out in compliance with EPA Good Laboratory Practice (GLP) standards. Grain was collected from replicated ﬁeld trials and was measured for proximates (protein, fat, ash, etc.), ﬁber, amino acids, fatty acids, vitamin E, nine minerals, phytic acid, trypsin inhibitor, and selected secondary metabolites. Forage was also collected and measured for proximates and ﬁber. All comparisons showed that Roundup Ready corn is compositionally comparable to conventional corn hybrids (<a href="#bookmark46">Ridley et al.</a>, 2002). These studies demonstrated that the insertion and expression of <span class="s16">cp4 epsps </span>coding sequences do not alter the proportion of aromatic amino acids associated with the shikimic acid pathway (the site of EPSPS activity).</p>
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">Although there is a comprehensive set of studies that conﬁrm the absence of ‘‘pleiotropic eﬀects’’ and the compositional comparability of  Roundup  Ready  corn to existing, non-transgenic hybrids, animal feeding studies have also been undertaken to provide further assurance of nutritional wholesomeness and safety. These studies include feeding trials in swine and poultry to demonstrate that Roundup Ready corn supports the growth of farm animals comparable to that of nontransgenic counterparts. A 90 day ‘‘safety assurance’’ study  was  also  carried  out  in  rats  to  provide  added</p>
+<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">Although there is a comprehensive set of studies that conﬁrm the absence of ‘‘pleiotropic eﬀects’’ and the compositional comparability of  Roundup  Ready  corn to existing, non-transgenic hybrids, animal feeding studies have also been undertaken to provide further assurance of nutritional wholesomeness and safety. These studies include feeding trials in swine and poultry to demonstrate that Roundup Ready corn supports the growth of farm animals comparable to that of nontransgenic counterparts. A 90 day ‘‘safety assurance’’ study  was  also  carried  out  in  rats  to  provide  added 
 
-<p style="padding-top: 2pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;"><a name="bookmark5">conﬁrmation of the safety of Roundup Ready corn grain for human consumption. The results of the 90 day ‘‘safety assurance’’ study will be presented and discussed in the context of the aforementioned studies to provide conﬁrmatory evidence of the safety of Roundup Ready corn grain for human consumption.</a></p>
+<a id="bookmark5">conﬁrmation of the safety of Roundup Ready corn grain for human consumption. The results of the 90 day ‘‘safety assurance’’ study will be presented and discussed in the context of the aforementioned studies to provide conﬁrmatory evidence of the safety of Roundup Ready corn grain for human consumption.</a>
+</p>
 
-</li><li style="padding-left: 18pt;text-indent: -12pt;text-align: justify;"><p class="s14" style="display: inline;"><a name="bookmark2">Materials and methods</a></p>
-<p><br/></p>
+</li>
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">The study design was adapted from OECD Guideline No. 408 (1981) and the study was conducted in general compliance with OECD Good Laboratory Practice (GLP) guidelines at the Metabolism and Safety Evaluation-Newstead, toxicology laboratory.</p>
+<h2 id="bookmark2">Materials and methods</h2>
 
-<ol id="l2"><li style="padding-left: 26pt;text-indent: -20pt;text-align: justify;"><p class="s16" style="display: inline;"><a name="bookmark3">Animals and maintenance</a></p>
+<p>The study design was adapted from OECD Guideline No. 408 (1981) and the study was conducted in general compliance with OECD Good Laboratory Practice (GLP) guidelines at the Metabolism and Safety Evaluation-Newstead, toxicology laboratory.</p>
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;">Male and female Sprague–Dawley derived rats (Crl:CD<span class="s18">1</span>(SD)IGS BR) from Charles River Laboratories (Raleigh, NC) were approximately 6 weeks of age at study start. Rats were housed individually and provided food and water ad libitum. The testing facility provided  appropriate   environmental   conditions (22 <span class="s14">± </span>3 <span class="s21">o</span>C room temperature, 12-h light/dark cycle, 40– 60% humidity, 10–15 air changes/h), and cage rack location within the animal room was rotated weekly.</p>
+<ol id="materials-list">
+	<li name="bookmark3">
+		Animals and maintenance
 
-</li><li style="padding-left: 26pt;text-indent: -20pt;text-align: justify;"><p class="s16" style="display: inline;"><a name="bookmark4">Test and control substances</a><a name="bookmark6">&zwnj;</a></p>
+<p>Male and female Sprague–Dawley derived rats (Crl:CD<span class="s18">1</span>(SD)IGS BR) from Charles River Laboratories (Raleigh, NC) were approximately 6 weeks of age at study start. Rats were housed individually and provided food and water ad libitum. The testing facility provided  appropriate   environmental   conditions (22 <span class="s14">± </span>3 <span class="s21">o</span>C room temperature, 12-h light/dark cycle, 40– 60% humidity, 10–15 air changes/h), and cage rack location within the animal room was rotated weekly.</p>
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;"><a name="bookmark28">Corn grain from Roundup Ready corn and its control [background genetics representative of the test line but lacking the nk 603 transgene (transformation event)] were grown at ﬁeld test sites in Ohio during the 1999 growing season. Roundup herbicide was applied to Roundup Ready corn plants during the growing season at commercial rates of application. Commercial, nontransgenic reference control corn grain representing a diversity of germplasm served as reference controls and were grown in various geographical locations in the United States (Ohio, Indiana, Iowa and Colorado) dur-</a></p>
-<p style="padding-top: 2pt;padding-left: 6pt;text-indent: 0pt;text-align: justify;">conﬁrmed by nk 603 event-speciﬁc polymerase chain reaction (PCR) analysis, the control line served as the negative control in the assay. The identity of reference control grain was conﬁrmed by chain of custody records.</p>
+</li><li id="bookmark4">Test and control substances
 
-</li><li style="padding-left: 26pt;text-indent: -20pt;text-align: justify;"><p class="s16" style="display: inline;">Experimental diets</p>
+<p id="bookmark28">Corn grain from Roundup Ready corn and its control [background genetics representative of the test line but lacking the nk 603 transgene (transformation event)] were grown at ﬁeld test sites in Ohio during the 1999 growing season. Roundup herbicide was applied to Roundup Ready corn plants during the growing season at commercial rates of application. Commercial, nontransgenic reference control corn grain representing a diversity of germplasm served as reference controls and were grown in various geographical locations in the United States (Ohio, Indiana, Iowa and Colorado) dur
+ing the 1999 growing season. The purpose of these reference controls was to approximate the normal range of responses of rats fed different commercial, non- transgenic corn grain since these data were not available. Prior to the advent of biotechnology, newly developed corn hybrids were not fed to rats in 90 day toxicology studies. The only historical data available was that for control rats at the testing laboratory that were fed grain from non-transgenic corn varieties incorporated into commercial rodent diets. The grain samples used for diet preparation were analyzed for nutrient compo- nents, pesticide residues (Covance Laboratories, Madison, WI, USA) including glyphosate (Monsanto Company, St. Louis, MO) and mycotoxins (Romer Labs, Union, MO). The identity of Roundup Ready corn grain was conﬁrmed by nk 603 event-speciﬁc polymerase chain reaction (PCR) analysis, the control line served as the negative control in the assay. The identity of reference control grain was conﬁrmed by chain of custody records.
+</p>
 
-<p style="padding-left: 6pt;text-indent: 8pt;text-align: justify;">Diets containing test, control and reference control grain were formulated by Purina TestDiet (Richmond, IN) to be nutritionally and compositionally comparable to PMI Certiﬁed Rodent LabDiet<span class="s18">1</span><span class="s19">3 </span>5002. Many toxicology laboratories use this diet in rodent feeding studies. Roundup Ready corn,  control,  and  reference control grains were ground and added to diets at levels of approximately 33% w/w, the standard incorporation rate for Certiﬁed Rodent LabDiet 5002. Roundup Ready corn and control corn were also added to diets at 11% w/w to assess any potential dose-response of eﬀects that might be observed at the 33% dietary level. To be consistent with all the other diets in the study, corn grain supplied by Purina TestDiet was added at 22% w/w to the 11% w/w corn grain diets to bring the total corn grain content up to 33% w/w, consistent with other diets. Following diet preparation, samples of all diets were analysed (Covance Laboratories, Madison, WI, USA) to conﬁrm formulated diets met PMI speciﬁcations for certiﬁed 5002 rodent diet.</p>
-<p><br/></p>
+</li>
+<li>Experimental diets 
 
-</li><li style="padding-left: 26pt;text-indent: -20pt;text-align: justify;"><p class="s16" style="display: inline;">Experimental design and treatment</p>
+<p>Diets containing test, control and reference control grain were formulated by Purina TestDiet (Richmond, IN) to be nutritionally and compositionally comparable to PMI Certiﬁed Rodent LabDiet<span class="s18">1</span><span class="s19">3 </span>5002. Many toxicology laboratories use this diet in rodent feeding studies. Roundup Ready corn,  control,  and  reference control grains were ground and added to diets at levels of approximately 33% w/w, the standard incorporation rate for Certiﬁed Rodent LabDiet 5002. Roundup Ready corn and control corn were also added to diets at 11% w/w to assess any potential dose-response of eﬀects that might be observed at the 33% dietary level. To be consistent with all the other diets in the study, corn grain supplied by Purina TestDiet was added at 22% w/w to the 11% w/w corn grain diets to bring the total corn grain content up to 33% w/w, consistent with other diets. Following diet preparation, samples of all diets were analysed (Covance Laboratories, Madison, WI, USA) to conﬁrm formulated diets met PMI speciﬁcations for certiﬁed 5002 rodent diet.</p>
+</li>
 
-<p style="padding-left: 6pt;text-indent: 8pt;text-align: justify;">Following acclimation to laboratory conditions, animals were assigned to one of ten experimental groups (20/sex/group) by stratiﬁed randomization so that mean body weights did not diﬀer signiﬁcantly (<span class="s16">P </span><span class="s14">&lt; </span><a href="#bookmark28" style=" color: black;font-size: 10pt;">0.05) among treatment groups. </a><a href="#bookmark28" class="a">Table </a><span style=" color: #000063;">1 </span>contains an outline of the experimental groups and treatment regimen.</p>
+<li>Experimental design and treatment
+
+
+<p>Following acclimation to laboratory conditions, animals were assigned to one of ten experimental groups (20/sex/group) by stratiﬁed randomization so that mean body weights did not diﬀer signiﬁcantly (<span class="s16">P </span><span class="s14">&lt; </span><a href="#bookmark28" style=" color: black;font-size: 10pt;">0.05) among treatment groups. </a><a href="#bookmark28" class="a">Table </a><span style=" color: #000063;">1 </span>contains an outline of the experimental groups and treatment regimen.
+</p>
 
 <p class="s1" style="padding-top: 7pt;padding-left: 6pt;text-indent: 0pt;text-align: justify;">Table 1</p>
 <p><span><img width="319" height="0" alt="image" src="glyphosate/Image_007.png"/></span></p>
@@ -207,7 +245,8 @@ strain CP4 encodes a 47.6 kDa CP4 EPSPS protein consisting of a single polypepti
 <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">corn grown</p>
 <p class="s1" style="padding-left: 5pt;text-indent: 0pt;line-height: 8pt;text-align: left;">Dietary level</p>
 <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">(% w/w)</p>
-<p style="padding-left: 5pt;text-indent: 0pt;text-align: justify;">of responses of rats fed diﬀerent commercial, non-transgenic corn grain since these data were not available. Prior to the advent of biotechnology, newly developed corn hybrids were not fed to rats in 90 day toxicology studies. The only historical data available was that for control rats at the testing laboratory that were fed grain from non-transgenic corn varieties incorporated into commercial rodent diets. The grain samples used for</p>
+
+
 <ol id="l3"><li style="padding-top: 1pt;padding-left: 12pt;text-indent: -6pt;text-align: left;"><p class="s1" style="display: inline;">Control (low)                      20                  Ohio                 11</p>
 </li><li style="padding-left: 12pt;text-indent: -6pt;text-align: left;"><p class="s1" style="display: inline;">Control (high)                     20                  Ohio                 33</p>
 </li><li style="padding-left: 12pt;text-indent: -6pt;text-align: left;"><p class="s1" style="display: inline;">Roundup Ready (low)       20                Ohio                11</p>
@@ -269,9 +308,10 @@ strain CP4 encodes a 47.6 kDa CP4 EPSPS protein consisting of a single polypepti
 </li></ol></li><li style="padding-left: 18pt;text-indent: -12pt;text-align: justify;"><p class="s14" style="display: inline;"><a name="bookmark14">Results</a></p>
 <p><br/></p>
 
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;"><a name="bookmark16">Compositional, contaminant, and nutritional analysis of the experimental diets showed that they met the speciﬁcations for Certiﬁed Rodent LabDiet 5002 established by PMI. The levels of heavy metals, aﬂatoxins, chlorinated hydrocarbons, organophosphate insecticides, and glyphosate were below detection limits. For chlordane, the Covance Laboratories’ limit of detection was higher (250 ppb) than the maximum speciﬁed concentration of 50 ppb, but this was not considered to have an impact on the study. PCR analysis conﬁrmed that the test diet contained Roundup Ready corn grain as it tested positive for the nk 603 transformation event. The control and reference control diets did not test positive for the nk 603 transformation event, as expected.</a></p>
-<p style="padding-left: 5pt;text-indent: 8pt;text-align: justify;"><a name="bookmark17">All of the 400 animals were healthy and appeared normal during the course of the study with the following two exceptions. One male from the 33% (high dose) Roundup Ready group was found dead on day 82. The animal had been healthy up to the time it was found dead and no apparent cause of death was determined at necropsy. Microscopic examination of tissues from this animal found no evidence for the cause of death. One male from a reference control group was euthanized on day 86 as it had a fractured nose and had markedly reduced food consumption. Neither of these deaths was considered test article related. There were no changes noted  during  the  duration  of  the  study  in  behavior,</a><a name="bookmark18">&zwnj;</a></p>
-<p style="padding-top: 2pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">activity, posture, gait, or external appearance in any of the groups in either sex (data not shown).</p>
+<p id="bookmark16">Compositional, contaminant, and nutritional analysis of the experimental diets showed that they met the speciﬁcations for Certiﬁed Rodent LabDiet 5002 established by PMI. The levels of heavy metals, aﬂatoxins, chlorinated hydrocarbons, organophosphate insecticides, and glyphosate were below detection limits. For chlordane, the Covance Laboratories’ limit of detection was higher (250 ppb) than the maximum speciﬁed concentration of 50 ppb, but this was not considered to have an impact on the study. PCR analysis conﬁrmed that the test diet contained Roundup Ready corn grain as it tested positive for the nk 603 transformation event. The control and reference control diets did not test positive for the nk 603 transformation event, as expected.</p>
+
+<p id="bookmark17">All of the 400 animals were healthy and appeared normal during the course of the study with the following two exceptions. One male from the 33% (high dose) Roundup Ready group was found dead on day 82. The animal had been healthy up to the time it was found dead and no apparent cause of death was determined at necropsy. Microscopic examination of tissues from this animal found no evidence for the cause of death. One male from a reference control group was euthanized on day 86 as it had a fractured nose and had markedly reduced food consumption. Neither of these deaths was considered test article related. There were no changes noted  during  the  duration  of  the  study  in  behavior,<a name="bookmark18">&zwnj;</a> 
+activity, posture, gait, or external appearance in any of the groups in either sex (data not shown).</p>
 <p><br/></p>
 
 <ol id="l4"><li style="padding-left: 26pt;text-indent: -20pt;text-align: left;"><p class="s16" style="display: inline;">Body weight and food consumption</p>
