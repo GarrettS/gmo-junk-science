@@ -12,3 +12,5 @@ Herbicide tolerance was accomplished through the introduction of [CP4 EPSPS](htt
 * The study is too short. It should be two years, not 13 weeks.
 * The diminished study groups (what was left of them) were too small to indicate statistical significance
 * Doesn't test the corn treated with roundup vs without
+* references section for Monsanto links to [Monsanto's financial reports](http://www.monsanto.com/monsanto/content/investor/financial/reports) (this link is now broken)
+* Discussion section rationalizes about GATT and percentage of this corn that is anticipated for EU food supply (what's the relation to the outcome of this study?)
