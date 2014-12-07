@@ -6,7 +6,7 @@ This is a **review** of Monsanto's 13 week feeding study in rats with grain from
 Herbicide tolerance was accomplished through the introduction of [CP4 EPSPS](http://www.cera-gmc.org/GmCropDatabaseEvent/NK603) coding sequences into the corn genome for *in planta* production of CP4 EPSPS enzymes. Unlike related corn EPSPS enzymes, CP4 EPSPS enzymes are not inhibited by the herbicide glyphosate. 
 
 ##Concerns
-* The study was paid for by Monsanto and conducted by Monsanto employees, a potential conflict of interest.
+* Paid for and conducted by Monsanto, a potential [conflict of interest](www.plosmedicine.org/article/info:doi/10.1371/journal.pmed.0040005).
 * Elsevier. Monsanto has a close relationship with Elsevier ([Richard Goodman](http://www.elsevier.com/journals/food-and-chemical-toxicology/0278-6915/editorial-boardrichard-goodman)). 
 * Discussion section rationalizes about [GATT](http://www.wto.org/english/tratop_e/sps_e/sps_agreement_cbt_e/c8s1p1_e.htm). What's the relation to the outcome of this study? 
 * References section for Monsanto links to [Monsanto's financial reports](http://www.monsanto.com/monsanto/content/investor/financial/reports) (this link is now broken). Why? Is this study for our health or for trade deals?

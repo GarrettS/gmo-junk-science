@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>doi:10.1016/j.fct.2004.02.013</title>
@@ -9,17 +9,16 @@ html {
     background: #ddd;
 }
 
-section {
-    background: #f9f9f9;
-    width: 780px;
-}
-
 body {
+    position: relative;
+    width: 780px;
     color: black;
     font-family:"Adobe Caslon Pro", serif;
     font-style: normal;
     font-size: 15px;
     border: 1px solid #eee;
+    padding: 20px;
+    background: #f9f9f9;
 }
 
 #overview {
@@ -33,7 +32,6 @@ body {
 
 #overview li {
     display: list-item;
-    line-height: 1.2;
 }
 
 header {
@@ -42,7 +40,7 @@ header {
     margin-bottom: 15px;
 }
 
-header p {
+header > p {
     text-align: center;
 }
 
@@ -54,54 +52,6 @@ h1 {
 
 h2 {
     font-size: 22px;
-}
-
-.problem-area {
-    outline: 0px transparent;
-}
-
-.active-annotation .problem-area, .active-annotation.problem-area {
-    transition: 1s .5s;
-    background: rgba(255, 0, 0, 0.05);
-    outline: 1px solid red;
-}
-
-.active-annotation * {
-    transition: 1s .5s;
-}
-
-.concern {
-    opacity: 0;
-    text-align: left;
-    float: right;
-    outline: 1px solid red;
-    background: #fff;
-    position: absolute;
-    top: auto;
-    left: 102%;
-    padding: 1px 8px;
-    min-width: 250px;
-    -moz-hyphens: auto;
-}
-
-.active-annotation .concern {
-    outline: 1px solid red;
-    opacity: 0.97;
-    transition: 1s .5s;
-    background: rgb(255, 254, 254);
-    text-align: left;
-}
-.active-annotation .concern p {
-    text-align: left;    
-}
-
-.active-annotation .concern li {
-    display: list-item;
-    margin-left: 0;
-}
-
-.active-annotation .highlight-text {
-    background: rgba(255, 255, 0, 0.5);
 }
 
 .problem {
@@ -136,14 +86,6 @@ li>h2 {
 
 }
 
-article {
-    position: relative;
-    width: 780px;
-    padding: 10px;
-    box-sizing: border-box;
-    background: #f9f9f9;
-}
-
 article > ol > li {
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -161,11 +103,7 @@ article > ol > li:nth-child(3) {
  .s2 {   font-size: 8pt; }
  .s5 { color: #000063; font-family:"Adobe Caslon Pro", serif;  font-size: 8.5pt; vertical-align: 4pt; }
 
- .monsanto-authors { 
-    color: #000063;
-    font-family:"Adobe Caslon Pro", serif;
-    font-size: 13pt;
-}
+ .monsanto-authors { color: #000063; font-family:"Adobe Caslon Pro", serif;  font-size: 13pt; }
 
  .s8 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 8pt; }
 
@@ -192,11 +130,7 @@ article > ol > li:nth-child(3) {
  }
  
  .s33 {   font-size: 5pt; vertical-align: 3pt; }
-
-li {
-    display: block;
-}
-
+ li { display: block; }
  #l1 {padding-left: 0pt;counter-reset: c1 0; }
  #l1> li:before {counter-increment: c1; content: counter(c1, decimal)". "; color: black; font-family:"Times New Roman", serif;  font-size: 22px; }
 
@@ -339,12 +273,12 @@ table > tbody {
     <h2>Concerns</h2>
 
     <ul>
-        <li><a href="#concern-publisher">Elsevier. Monsanto has a close relationship with Elsevier</a>.</li>
-        <li>
-            <a href="#concern-coi">Paid for, designed, and conducted by Monsanto; financial conflict of interest.</a>
-        </li>
-        <li>Discussion section rationalizes about <a href="http://www.wto.org/english/tratop_e/sps_e/sps_agreement_cbt_e/c8s1p1_e.htm">GATT</a>. What's the relation to the outcome of this study?</li>
-        <li>References section for Monsanto links to <a href="http://www.monsanto.com/monsanto/content/investor/financial/reports">Monsanto's financial reports</a> (this link is now broken). Why? Is this study for our health or for trade deals?</li>
+    <li>
+        <a href="#concern-coi">Paid for and conducted by Monsanto, a potential conflict of interest.</a>
+    </li>
+    <li>Elsevier. Monsanto has a close relationship with Elsevier (<a href="http://www.elsevier.com/journals/food-and-chemical-toxicology/0278-6915/editorial-boardrichard-goodman">Richard Goodman</a>).</li>
+    <li>Discussion section rationalizes about <a href="http://www.wto.org/english/tratop_e/sps_e/sps_agreement_cbt_e/c8s1p1_e.htm">GATT</a>. What's the relation to the outcome of this study?</li>
+    <li>References section for Monsanto links to <a href="http://www.monsanto.com/monsanto/content/investor/financial/reports">Monsanto's financial reports</a> (this link is now broken). Why? Is this study for our health or for trade deals?</li>
     </ul>
 
 
@@ -361,79 +295,21 @@ table > tbody {
     </ul>
 </section>
 
-<article>
-
     <header>
 
-        <div id="concern-publisher">
         <div style="float: right;width: 230px;direction: rtl">
-
-
             <img width="55" height="79" alt="image" 
                 style="display: block"
-                 class="problem-area"
                 src="glyphosate/Image_002.gif"/>
 
-                <a href="http://www.elsevier.com/locate/foodchemtox/a4.3d" class="s2 problem-area highlight-text" target="_2014_Uncontrolled_GMOs_and_their_associated_pesticides_make_the_conclusions_unreliable">www.elsevier.com/locate/foodchemtox</a>
+            <a href="http://www.elsevier.com/locate/foodchemtox/a4.3d" class="s2" target="_blank">www.elsevier.com/locate/foodchemtox</a>
         </div>
-            <div class="concern">
-                <a href="#overview">top</a>
-                <a href="#next">next</a>
-                <img class="close-button" height="20" src="glyphosate/round_red_x_sign_4229.jpg" 
-                style="position: absolute; right: 0">
-                <h5></h5>
-                <p>
-                    Journal editors have power to influence and control science publishing. 
-                </p>
-                <p>
-                    Elsevier is a major publisher with strong industry ties. 
-                </p>
-                <p>                    
-                    <a href="http://www.elsevier.com/journals/food-and-chemical-toxicology/0278-6915/editorial-boardrichard-goodman">Richard Goodman</a>, a former 
-                    Monsanto employee was, appointed to their 
-                    review board after the Séralini affair. 
-                    Another case, Elsevier has published 
-                    <a href="http://science.slashdot.org/story/09/05/09/1514235/more-fake-journals-from-elsevier">6 known fake scientific journals</a> and invented <a 
-                    href="http://www.the-scientist.com/?articles.view/articleNo/27376/title/Merck-published-fake-journal/"
-                    >an entire medical journal with a fake review board</a>, for Merck.
-                </p>
-                <p>
-                    Due to their history, their ties to Monsanto, and what is at stake, it is of noteworthy consideration. However, Elsevier is not accused of any foul-play regarding publication of this particular study. 
-                </p>
-            </div
-        ><img width="71" height="79" alt="image" src="glyphosate/ElsevierlogoBlack.png"
-            class="problem-area"
-            ></div>
+        <img width="71" height="79" alt="image" src="glyphosate/ElsevierlogoBlack.png">
 
         
-        <p class="s1" style="clear: right">Food and Chemical Toxicology 42 (2004) 1003–1014</p>
+        <p class="s1">Food and Chemical Toxicology 42 (2004) 1003–1014</p>
 
         <h1>Results of a 13 week safety assurance study with rats fed grain from glyphosate tolerant corn</h1>
-
-        <div id="concern-coi" class="problem-area">
-            <div class="concern">
-                <a href="#overview">top</a>
-                <a href="#next">next</a>
-                <img height="20" src="glyphosate/round_red_x_sign_4229.jpg" 
-                style="position: absolute; right: 0">
-                <h5></h5>
-                <p>
-                    Source of funding has been shown to affect research outcome, either by design of the study or by researcher bias. 
-                    And industry researchers may have additional financial or career incentives.
-                    Both cases apply here; the study was funded by Monsanto and conducted by Monsanto employees.
-                </p>
-                
-                <h5>Sources</h5>
-                <ol>
-                    <li>
-                        <a href="http://blogs.scientificamerican.com/guest-blog/2012/09/23/can-the-source-of-funding-for-medical-research-affect-the-results/">http://blogs.scientificamerican.com/guest-blog/2012/09/23/can-the-source-of-funding-for-medical-research-affect-the-results/</a>
-                    <li>
-                        <a href="http://www.plosmedicine.org/article/info:doi/10.1371/journal.pmed.0040005">www.plosmedicine.org/article/info:doi/10.1371/journal.pmed.0040005</a>
-                    <li>
-                        <a href="http://undsci.berkeley.edu/article/0_0_0/who_pays"
-                        >http://undsci.berkeley.edu/article/0_0_0/who_pays</a>
-                </ol>
-            </div>
 
             <p class="monsanto-authors">
                 <a href="#bookmark25">B. Hammond</a><sup>a</sup>*,
@@ -444,25 +320,22 @@ table > tbody {
                 <a href="#Monsanto">M. Nemeth</a><a href="#bookmark25" class="s5">a</a>
             </p>
 
-            <p class="s7" style="padding-top: 4pt;" id="Monsanto"><span class="highlight-text">
-                <small>a</small> Monsanto Company, 800 N. Lindbergh, St Louis, MO, 63167, USA</span>
+            <p class="s7" style="padding-top: 4pttext-align: center;" id="Monsanto">a<span class="s8">Monsanto Company, 800 N. Lindbergh, St Louis, MO, 63167, USA</span>
             </p>
             <p class="s7" style="text-align: center;"
-            id="MonsantoCo"><span class="highlight-text">
-            <small>b</small> Monsanto Company, Metabolism and Safety Evaluation-Newstead (MSE-N), 645 S. Newstead Ave., St Louis, MO 63110, USA</span></p>
-        </div>
-        <p class="s1" id="Monsanto">
-            Received 18 June 2003; accepted 12 February 2004
-        </p>
+            id="MonsantoCo">b<span class="s8">Monsanto Company, Metabolism and Safety Evaluation-Newstead (MSE-N), 645 S. Newstead Ave., St Louis, MO 63110, USA</span></p>
 
+        <p class="s1"
+        id="Monsanto">Received 18 June 2003; accepted 12 February 2004
+        </p>
     </header>
 
+    <article>
 
 <h2>Abstract</h2>
 <p>
     The current study presents the results of a 13 week feeding study in rats with grain from Roundup Ready<a class="s11" href="#rr-1">1</a>
-    corn which is tolerant to the herbicide glyphosate. Herbicide tolerance was accomplished through the introduction of <dfn>cp4 epsps</dfn> coding sequences into the corn genome for <dfn>in planta</dfn> production of CP4 EPSPS enzymes. Unlike related corn EPSPS enzymes, CP4 EPSPS enzymes are not inhibited by the herbicide glyphosate. Purina TestDiets formulated Roundup Ready corn grain into rodent diets at levels of 11 and 33% (w/w). The responses of rats fed diets containing Roundup Ready corn grain were compared to that of rats fed diets containing non-transgenic grain (controls). All diets were nutritionally balanced and conformed to Purina Mills, Inc. specifications for Certified LabDiet 5002. There were 400 rats in the study divided into 10 groups of 20 rats/sex/group. Overall health, body weight, food consumption, clinical pathology parameters (hematology, blood chemistry, urinalysis), organ weights, gross and microscopic appearance of tissues were comparable between groups fed diets containing Roundup Ready and control corn grain. This study complements extensive agronomic, compositional and farm animal feeding studies with Roundup Ready corn grain, confirming it is as safe and nutritious as existing commercial corn hybrids.
-</p>
+    corn which is tolerant to the herbicide glyphosate. Herbicide tolerance was accomplished through the introduction of <dfn>cp4 epsps</dfn> coding sequences into the corn genome for <dfn>in planta</dfn> production of CP4 EPSPS enzymes. Unlike related corn EPSPS enzymes, CP4 EPSPS enzymes are not inhibited by the herbicide glyphosate. Purina TestDiets formulated Roundup Ready corn grain into rodent diets at levels of 11 and 33% (w/w). The responses of rats fed diets containing Roundup Ready corn grain were compared to that of rats fed diets containing non-transgenic grain (controls). All diets were nutritionally balanced and conformed to Purina Mills, Inc. specifications for Certified LabDiet 5002. There were 400 rats in the study divided into 10 groups of 20 rats/sex/group. Overall health, body weight, food consumption, clinical pathology parameters (hematology, blood chemistry, urinalysis), organ weights, gross and microscopic appearance of tissues were comparable between groups fed diets containing Roundup Ready and control corn grain. This study complements extensive agronomic, compositional and farm animal feeding studies with Roundup Ready corn grain, confirming it is as safe and nutritious as existing commercial corn hybrids.</p>
 
 <p class="s9" style="padding-left: 5pt;text-indent: 0pt;text-align: left;font-size:9pt">
     # 2004 Elsevier Ltd. All rights reserved.
@@ -2710,72 +2583,4 @@ ing the 1999 growing season. The purpose of these reference controls was to appr
 </p>
 </article>
 
-<script>
-(function() {
-    var matchesSelector = (function(){
-        var all = ["matchesSelector",
-                 "webkitMatchesSelector",
-                 "mozMatchesSelector",
-                 "msMatchesSelector"];
-        var b = document.body;
-        var fName;
-        for(var i = 0; i < all.length; i++) {
-            fName = all[i];
-            if(typeof b[fName] == "function") return fName;
-        }
-    })();
-    if(!matchesSelector) return;
-
-    var overview = document.getElementById("overview");
-    var concernSelector = 'a[href^="#concern"]';
-    var annotation;
-
-    overview.onclick = function(ev) {
-        var target = ev.target;
-        if(target[matchesSelector](concernSelector)) {
-            showAnnotation(target);
-            fixNextLink(target, annotation);
-            fixCloseButton(annotation);
-        }
-    };
-
-    function fixCloseButton(annotation) {
-        var closeButton = annotation.querySelector(".close-button");
-        closeButton.onclick = function() {
-            annotation.classList.remove("active-annotation");
-        }
-    }
-
-    function showAnnotation(target) {
-        var nextAnnotation = document.querySelector(target.hash);
-        if(annotation && annotation != nextAnnotation) {
-            annotation.classList.remove("active-annotation");
-        }
-        annotation = nextAnnotation;
-        annotation.classList.add("active-annotation");
-        annotation.querySelector("h5").textContent = target.textContent;
-    }
-
-    window.onload = function(ev) {
-        
-        var link = overview.querySelector('a[href="' + location.hash + '"]');
-        if(link) {
-            link.click();
-        }
-    };
-
-    function fixNextLink(a, annotation) {
-        var nextLink = annotation.querySelector('a[href="#next"]');
-        var tocLI, tocLink;
-        if(!nextLink) return;
-        var tocLI = a.parentNode.nextElementSibling;
-        if(tocLI) {
-            tocLink = tocLI.querySelector(concernSelector);
-            nextLink.hash = "#" + tocLink.hash;
-            nextLink.title = tocLink.textContent;
-            nextLink.onclick = tocLink.click.bind(tocLink);
-        }
-    }
-}());
-</script>
 </body></html>
