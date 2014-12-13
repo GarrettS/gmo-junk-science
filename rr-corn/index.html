@@ -11,7 +11,7 @@ html {
 
 section {
     background: #f9f9f9;
-    width: 780px;
+    width: 830px;
 }
 
 body {
@@ -352,7 +352,10 @@ table > tbody {
                 <dfn title="General Agreement on Tarriffs and Trade">GATT</dfn> in the discussion section of this study?</a>
         </li>
 
-        <li>References section for Monsanto links to <a href="http://www.monsanto.com/monsanto/content/investor/financial/reports">Monsanto's financial reports</a> (this link is now broken). Why? Is this study for our health or for trade deals?</li>
+        <li>
+            <a href="#concern-financial">
+            The discussion section references Monsanto's financial reports. Why?</a>
+        </li>
     </ul>
 
 
@@ -2600,7 +2603,7 @@ ing the 1999 growing season. The purpose of these reference controls was to appr
         style="position: absolute; right: 0">
         <h5></h5>
         <p>
-        This study is supposed to be about the safety of rats consuming grain from glyphosate tolerant corn. Why is the discussion focused on GATT, transnational trade deals? What's GATT?
+            This study is supposed to be about the safety of rats consuming grain from glyphosate tolerant corn. Why is the discussion focused on GATT, transnational trade deals? What's GATT?
 
         <p>
             The General Agreement on Tariffs and Trade 
@@ -2714,11 +2717,49 @@ ing the 1999 growing season. The purpose of these reference controls was to appr
 <p class="s1 ref" id="bookmark50">
     Leiner, I.E., 1994. Implications of antinutritional components in soybean foods. Critical Reviews in Food Science and Nutrition 34 (1), 31–67.
 </p>
+    <div id="concern-financial">
+        <div class="concern">
+            <a href="#overview">top</a>
+            <a href="#next">next</a>
+            <img class="close-button" height="20" src="glyphosate/round_red_x_sign_4229.jpg" 
+            style="position: absolute; right: 0">
+            <h5></h5>
 
-<p class="s1 ref">
-    Monsanto, 2003. 1996–2003 Monsanto Biotechnology Trait Acreage. 
-    <a href="http://www.monsanto.com/monsanto/content/investor/financial/reports" class="s2" target="_blank" id="bookmark51">http://www.monsanto.com/monsanto/content/investor/financial/reports</a> (accessed Feb, 2004).
-</p>
+            <p>
+                The <a href="http://news.monsanto.com/press-release/monsanto-company-reports-second-quarter-2003-results">referenced page</a> mentioned in
+                the discussion section is Monsanto's 
+                financial report. 
+            </p>
+            <p>
+                Yet the  
+                discussion section is hypothesizing and 
+                rationalizing on safety margin:–
+            </p>
+            <blockquote>
+                <p>
+                    &hellip;(~15%) of the total grain grown in the United States for animal and human food which would increase the safety margin further (<a href="#bookmark50">Monsanto, 2003</a>).
+                </p>
+            </blockquote>
+            <p>
+                The hypothesizing on safety is out of place in the discussion. And any discussion on safety should be focused solely on safety, not on 
+                hypotheses, and certainly not on financial reports. Allusion to Monsanto's
+                financial status is inappropriate.
+            </p>
+            <p>
+                Although the Reference link currently resolves to a 404 page, its title, 
+                <a 
+                href="http://news.monsanto.com/press-release/monsanto-company-reports-second-quarter-2003-results">
+                Monsanto, 2003. 1996–2003 Monsanto Biotechnology Trait Acreage</a> was 
+                easily found in a <a 
+                href="https://www.google.com/search?q=Monsanto%2C+2003.+1996–2003+Monsanto+Biotechnology+Trait+Acreage.">Google search</a>.
+            </p>
+        </div>
+        <p class="s1 ref problem-area">
+            Monsanto, 2003. 1996–2003 Monsanto Biotechnology Trait Acreage. 
+            <a href="http://www.monsanto.com/monsanto/content/investor/financial/reports" class="s2" target="_blank" id="bookmark51">http://www.monsanto.com/monsanto/content/investor/financial/reports</a> (accessed Feb, 2004).
+        </p>
+    </div>
+
 <p class="s1 ref" id="bookmark53">
     Munro, I.C., Ford, R.A., Kennepohl, E., Sprenger, J.G., 1996. Correlation of structural class with no-observed-eﬀect levels: a proposal for establishing a threshold of concern. Food and Chemical  Toxicology 34, 829–867.
 </p>
@@ -2792,13 +2833,13 @@ ing the 1999 growing season. The purpose of these reference controls was to appr
         if(target[matchesSelector](concernSelector)) {
             showAnnotation(target);
             fixNextLink(target, annotation);
-            fixCloseButton(annotation);
         }
     };
 
     function fixCloseButton(annotation) {
         var closeButton = annotation.querySelector(".close-button");
         closeButton.onclick = function() {
+            debugger;
             annotation.classList.remove("active-annotation");
         }
     }
@@ -2811,6 +2852,7 @@ ing the 1999 growing season. The purpose of these reference controls was to appr
         annotation = nextAnnotation;
         annotation.classList.add("active-annotation");
         annotation.querySelector("h5").textContent = target.textContent;
+        fixCloseButton(annotation);
     }
 
     window.onload = function(ev) {
