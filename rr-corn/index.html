@@ -84,6 +84,24 @@ h2 {
     left: 100%;
     padding: 1px 8px;
     min-width: 260px;
+    z-index: -1;
+}
+
+.concern ul, .concern ol {
+    padding: 0 0 0 4px;
+    margin-top: 0;
+}
+
+.concern li {
+    display: list-item;
+    list-style-type: arabic;
+    list-style-position: inside;
+    padding: 0px;
+    margin: 7px 0 7px 0;
+}
+
+.concern h5 {
+    margin-bottom: 0;
 }
 
 .active-annotation .concern {
@@ -92,14 +110,10 @@ h2 {
     transition: 1s .5s;
     background: rgb(255, 254, 254);
     text-align: left;
+    z-index: 1;
 }
 .active-annotation .concern p {
     text-align: left;    
-}
-
-.active-annotation .concern li {
-    display: list-item;
-    margin-left: 0;
 }
 
 .active-annotation .highlight-text {
@@ -346,7 +360,7 @@ table > tbody {
     <ul>
         <li><a href="#concern-publisher">Monsanto has a close relationship with the publisher Elsevier</a>.</li>
         <li>
-            <a href="#concern-coi">Paid for, designed, and conducted by Monsanto; financial conflict of interest.</a>
+            <a href="#concern-coi">Paid for and designed and conducted by Monsanto, a financial conflict of interest.</a>
         </li>
 
         <li>
@@ -396,20 +410,25 @@ table > tbody {
                 style="position: absolute; right: 0">
                 <h5></h5>
                 <p>
-                    Due to their history, their ties to Monsanto, and what is at stake, it is of noteworthy consideration. However, Elsevier is not accused of any foul-play regarding publication of this particular study. 
+                    Elsevier is not accused of anything regarding this study. 
                 </p>
                 <p>
-                    Elsevier is a major publisher with industry
-                    ties and a history of faked journals. 
+                    However, Elsevier's 
+                    ties to Monsanto and history include:—
                 </p>
-                <p>                    
-                    Former Monsanto employee <a href="http://www.elsevier.com/journals/food-and-chemical-toxicology/0278-6915/editorial-boardrichard-goodman">Richard Goodman</a> was appointed to Elsevier's review board after the Séralini affair. And Elsevier has published 
-                    <a href="http://science.slashdot.org/story/09/05/09/1514235/more-fake-journals-from-elsevier">6 known fake scientific journals</a> and invented <a 
-                    href="http://www.the-scientist.com/?articles.view/articleNo/27376/title/Merck-published-fake-journal/"
-                    >an entire medical journal with a fake review board</a>, for Merck.
-                </p>
+                <ul>
+                    <li>                    
+                         Former Monsanto employee <a href="http://www.elsevier.com/journals/food-and-chemical-toxicology/0278-6915/editorial-boardrichard-goodman">Richard Goodman</a> appointed to Elsevier review board after Séralini affair.
+                    </li>
+                    <li>
+                        Elsevier published 
+                        <a href="http://science.slashdot.org/story/09/05/09/1514235/more-fake-journals-from-elsevier">6 known fake scientific journals</a> and invented <a 
+                        href="http://www.the-scientist.com/?articles.view/articleNo/27376/title/Merck-published-fake-journal/"
+                        >a medical journal with a fake review board</a> for Merck.
+                    </li>
+                </ul>
                 <p>
-                    Just something to take note of.
+                    Just something to keep in mind.
                 </p>
             </div
         ><img width="71" height="79" alt="image" src="glyphosate/ElsevierlogoBlack.png"
@@ -437,12 +456,21 @@ table > tbody {
                 <h5>Sources</h5>
                 <ol>
                     <li>
-                        <a href="http://blogs.scientificamerican.com/guest-blog/2012/09/23/can-the-source-of-funding-for-medical-research-affect-the-results/">http://blogs.scientificamerican.com/guest-blog/2012/09/23/can-the-source-of-funding-for-medical-research-affect-the-results/</a>
+                        <a title="Scientific American: Can the Source of Funding for Medical Research Affect the Results?"
+                        href="http://blogs.scientificamerican.com/guest-blog/2012/09/23/can-the-source-of-funding-for-medical-research-affect-the-results/">Can the Source of Funding for Medical Research Affect the Results?</a>
                     <li>
-                        <a href="http://www.plosmedicine.org/article/info:doi/10.1371/journal.pmed.0040005">www.plosmedicine.org/article/info:doi/10.1371/journal.pmed.0040005</a>
+                        <a href="http://www.plosmedicine.org/article/info:doi/10.1371/journal.pmed.0040005">Relationship between Funding Source and Conclusion among Nutrition-Related Scientific Articles</a>
                     <li>
                         <a href="http://undsci.berkeley.edu/article/0_0_0/who_pays"
-                        >http://undsci.berkeley.edu/article/0_0_0/who_pays</a>
+                        >Who pays for science?</a>
+                    <li>
+                        <a href="http://www.bmj.com/content/349/bmj.g5012">Does $760m a year of industry funding affect the FDA’s drug approval process?</a>
+                    <li>
+                        <a href="http://www.spinwatch.org/index.php/issues/more/item/12-corporate-front-groups-and-the-abuse-of-science-the-american-council-on-science-and-health-acsh"
+                        >Corporate front groups and the abuse of science: The American Council on Science and Health (ACSH)</a>
+                    </li>
+                    <li>
+                        <a href="http://www.ucdmc.ucdavis.edu/welcome/features/20071114_cardio-tobacco/">Big tobacco and science: Uncovering the truth</a>
                 </ol>
             </div>
 
@@ -2830,16 +2858,14 @@ ing the 1999 growing season. The purpose of these reference controls was to appr
         var target = ev.target;
         if(target[matchesSelector](concernSelector)) {
             showAnnotation(target);
-            fixNextLink(target, annotation);
         }
     };
 
     function fixCloseButton(annotation) {
         var closeButton = annotation.querySelector(".close-button");
-        closeButton.onclick = function() {
-            debugger;
+        closeButton && (closeButton.onclick = function() {
             annotation.classList.remove("active-annotation");
-        }
+        });
     }
 
     function showAnnotation(target) {
@@ -2851,6 +2877,7 @@ ing the 1999 growing season. The purpose of these reference controls was to appr
         annotation.classList.add("active-annotation");
         annotation.querySelector("h5").textContent = target.textContent;
         fixCloseButton(annotation);
+        fixNextLink(target, annotation);
     }
 
     window.onload = function(ev) {
