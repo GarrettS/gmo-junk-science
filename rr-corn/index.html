@@ -57,7 +57,6 @@ h2 {
 
 .problem-area {
     outline: 0px transparent;
-    padding: 1px 0;
 }
 
 .active-annotation .problem-area, .active-annotation.problem-area {
@@ -104,18 +103,36 @@ h2 {
     margin-bottom: 0;
 }
 
+.concern h5, .concern h6 {
+    margin-bottom: 10px;
+}
+
 .active-annotation .concern {
     outline: 1px solid red;
     opacity: 0.97;
     transition: 1s .5s;
     background: rgb(255, 254, 254);
+<<<<<<< Updated upstream
     text-align: left;
     z-index: 1;
+=======
+>>>>>>> Stashed changes
 }
-.active-annotation .concern p {
-    text-align: left;    
+.concern p {
+    text-align: left;     
+    font-size: 90%;
+    font-family: sans-serif;
+    line-height: 1.2;
 }
 
+<<<<<<< Updated upstream
+=======
+.concern li {
+    display: list-item;
+    margin-left: 0;
+}
+
+>>>>>>> Stashed changes
 .active-annotation .highlight-text {
     background: rgba(255, 255, 0, 0.5);
 }
@@ -369,8 +386,8 @@ table > tbody {
         </li>
 
         <li>
-            <a href="#concern-financial">
-            The discussion section references Monsanto's financial reports. Why?</a>
+            <a href="#concern-financial"
+            >The discussion section references Monsanto's financial reports. Why?</a>
         </li>
     </ul>
 
@@ -378,7 +395,10 @@ table > tbody {
     <h2>Problems</h2>
 
     <ul>
-    <li>Half of the rats in the study groups were omitted from some of the tests. Why? What happened to them?</li>
+        <li><a href="#problem-missing-rats"
+            ></a>Half of the rats in the study groups were omitted from some of the tests. Why? What happened to them?
+        </li>
+
     <li>The study is too short. It should be two years, not 13 weeks.</li>
     <li>The diminished study groups (what was left of them) were too small to indicate statistical significance. <a href="http://en.wikipedia.org/wiki/P-value">P-value</a> for a group of 4-6 is too high and a <a href="http://en.wikipedia.org/wiki/Type_I_and_type_II_errors">type-II</a> error is likely.</li>
     <li>Doesn't test the Roundup Ready corn treated with Roundup vs without Roundup.</li>
@@ -2631,8 +2651,8 @@ ing the 1999 growing season. The purpose of these reference controls was to appr
         style="position: absolute; right: 0">
         <h5></h5>
         <p>
-            This study is supposed to be about the safety of rats consuming grain from glyphosate tolerant corn. Why is the discussion focused on GATT, transnational trade deals? What's GATT?
-
+            This study is supposed to be about the safety of rats consuming grain from glyphosate tolerant corn. Why is the discussion focused on GATT transnational trade deals? 
+        <h6>What is GATT?</h6>
         <p>
             The General Agreement on Tariffs and Trade 
             (<a href="http://www.wto.org/english/tratop_e/sps_e/sps_agreement_cbt_e/c8s1p1_e.htm"
@@ -2642,6 +2662,7 @@ ing the 1999 growing season. The purpose of these reference controls was to appr
             First established in 1947, GATT was designed by large corporate powers of the time to regulate their own industry. 
         </p>
 
+        <h6>TRIPS &amp; Intellectual Property</h6>
         <p>
             In GATT's 1986 round of multilateral trade negotiations, several large transnational corporations got together to form an "advisory committee" on trade and later, on intellectual property.
         </p>
