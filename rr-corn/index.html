@@ -2938,9 +2938,11 @@ strain CP4 encodes a 47.6 kDa CP4 EPSPS protein consisting of a single polypepti
         var tocLI = a.parentNode.nextElementSibling;
         if(tocLI) {
             tocLink = tocLI.querySelector(concernSelector);
-            nextLink.hash = "#" + tocLink.hash;
-            nextLink.title = tocLink.textContent;
-            nextLink.onclick = tocLink.click.bind(tocLink);
+            if(tocLink) {
+                nextLink.hash = "#" + tocLink.hash;
+                nextLink.title = tocLink.textContent;
+                nextLink.onclick = tocLink.click.bind(tocLink);
+            }
         }
     }
 }());
